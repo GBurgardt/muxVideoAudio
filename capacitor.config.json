@@ -1,0 +1,6 @@
+{
+  "appId": "com.burgardt.german",
+  "appName": "testCapacitor",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
