@@ -29,7 +29,6 @@ export class HomePage {
         CustomNativePlugin.customCall().then(result => {
             console.log('EL RESULTADO: ');
             console.log(result);
-            console.log(result.respuesta);
             console.log('FINNNNNN');
         }).catch(err=>{
             console.log(err);
