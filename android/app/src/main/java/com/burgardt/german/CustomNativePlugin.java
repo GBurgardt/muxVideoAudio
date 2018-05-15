@@ -29,6 +29,18 @@ public class CustomNativePlugin extends Plugin {
     // Parametros??
     String message = call.getString("value");
 
+
+    /* PROBAR PASAR LOS PATH ASÍ
+    fun selectMediaToPlay(source: Source): Uri {
+        return when (source) {
+            Source.local_audio -> Uri.parse("asset:///audio/file.mp3")
+            Source.local_video -> Uri.parse("asset:///video/file.mp4")
+            Source.http_audio -> Uri.parse("http://site.../file.mp3")
+            Source.http_video -> Uri.parse("http://site.../file.mp4")
+        }
+    }
+    * */
+
     JSObject muxResponse = muxingVideoWithAudio(myContext, "test", "test");
     call.success(muxResponse);
   }
