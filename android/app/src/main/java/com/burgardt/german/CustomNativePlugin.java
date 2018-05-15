@@ -39,6 +39,15 @@ public class CustomNativePlugin extends Plugin {
             Source.http_video -> Uri.parse("http://site.../file.mp4")
         }
     }
+
+    You can load files from assets in the following ways (you can create nested folders under the assets folder):
+
+    Uri.parse(“file:///android_asset/video/video.mp4”)
+    Uri.parse(“asset:///video/video.mp4”)
+    Please note that:
+
+    You can use RawResourceDataSource to build a Uri that points to a resource id in the res folder, eg: RawResourceDataSource.buildRawResourceUri(R.raw.my_media_file).
+
     * */
 
     JSObject muxResponse = muxingVideoWithAudio(myContext, "test", "test");
